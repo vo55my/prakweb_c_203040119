@@ -46,7 +46,7 @@ $buku = query("SELECT * FROM buku");
 </head>
 
 <body>
-    <h2 class="text-center fw-bold">Toko Buku Cerdas</h2>
+    <h2 class="text-center fw-bold">Daftar Buku Cerdas</h2>
     <div class="container">
         <table class="table table-hover">
             <thead class="table-dark">
