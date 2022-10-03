@@ -47,7 +47,7 @@ $buku = query("SELECT * FROM buku");
                         <tr class="" tabindex="0">
                             <td class="align-middle"><strong><?= $i ?></strong></td>
                             <td class="align-middle text-center">
-                                <img class="" src="assets/<?= $b["cover"]; ?>">
+                                <img src="assets/<?= $b["cover"]; ?>">
                             </td>
                             <td class="align-middle text-center"><a href="detail.php?id=<?= $b['id'] ?>" class="text-decoration-none text-dark"><?= $b["judul"]; ?></a></td>
                             <td class="align-middle text-center"><?= $b["penulis"]; ?></td>

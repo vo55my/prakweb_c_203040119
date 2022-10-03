@@ -35,7 +35,7 @@ if (isset($_POST['ubah'])) {
 <body>
     <div class="container">
         <h3 class="text-center fw-bold">Form Ubah Data Buku</h3>
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" id="id" value="<?= $b['id']; ?>">
             <div class="mb-3">
                 <label for="judul" class="form-label">Judul Buku</label>
@@ -68,7 +68,7 @@ if (isset($_POST['ubah'])) {
             <div class="mb-3">
                 <label for="cover" class="form-label">Cover</label>
                 <div>
-                    <input name="cover" id="cover" type="file" required value="<?= $b['cover']; ?>">
+                    <input name="cover" id="cover" type="file" class="form-control validate" value="<?= $b['cover']; ?>" disabled>
                 </div>
             </div>
             <button type="submit" name="ubah" class="btn btn-primary">Selesai</button>
