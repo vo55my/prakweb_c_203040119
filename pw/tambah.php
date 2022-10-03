@@ -32,39 +32,39 @@ if (isset($_POST['tambah'])) {
 <body>
     <div class="container">
         <h3 class="text-center fw-bold">Form Tambah Data Buku</h3>
-        <form method="POST">
+        <form action="" method="POST">
             <div class="mb-3">
                 <label for="judul" class="form-label">Judul Buku</label>
-                <input type="text" class="form-control" id="judul">
+                <input name="judul" id="judul" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="penulis" class="form-label">Penulis</label>
-                <input type="text" class="form-control" id="penulis">
+                <input name="penulis" id="penulis" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="penerbit" class="form-label">Penerbit</label>
-                <input type="text" class="form-control" id="penerbit">
+                <input name="penerbit" id="penerbit" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="harga" class="form-label">Harga</label>
-                <input type="text" class="form-control" id="harga">
+                <input name="harga" id="harga" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="halaman" class="form-label">Halaman</label>
-                <input type="text" class="form-control" id="halaman">
+                <input name="halaman" id="halaman" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="genre" class="form-label">Genre</label>
-                <input type="text" class="form-control" id="genre">
+                <input name="genre" id="genre" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="bahasa" class="form-label">Bahasa</label>
-                <input type="text" class="form-control" id="bahasa">
+                <input name="bahasa" id="bahasa" type="text" class="form-control validate" required>
             </div>
             <div class="mb-3">
                 <label for="cover" class="form-label">Cover</label>
                 <div>
-                    <input name="cover" id="cover" type="file" required>
+                    <input name="cover" id="cover" type="file" class="form-control validate" required>
                 </div>
             </div>
             <button type="submit" name="tambah" class="btn btn-primary">Selesai</button>

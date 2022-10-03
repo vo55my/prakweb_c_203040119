@@ -1,3 +1,7 @@
+body {
+  background-color: silver;
+}
+
 /* Index */
 img {
   width: 100px;
@@ -26,10 +30,6 @@ a {
 
 .clear {
   clear: both;
-}
-
-body {
-  background-color: silver;
 }
 
 /* Update Tambah */

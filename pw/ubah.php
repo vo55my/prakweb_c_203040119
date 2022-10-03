@@ -39,31 +39,31 @@ if (isset($_POST['ubah'])) {
             <input type="hidden" name="id" id="id" value="<?= $b['id']; ?>">
             <div class="mb-3">
                 <label for="judul" class="form-label">Judul Buku</label>
-                <input type="text" class="form-control" id="judul" required value="<?= $b['judul']; ?>">
+                <input name="judul" id="judul" type="text" class="form-control validate" required value="<?= $b['judul']; ?>">
             </div>
             <div class="mb-3">
                 <label for="penulis" class="form-label">Penulis</label>
-                <input type="text" class="form-control" id="penulis" required value="<?= $b['penulis']; ?>">
+                <input name="penulis" id="penulis" type="text" class="form-control validate" required value="<?= $b['penulis']; ?>">
             </div>
             <div class="mb-3">
                 <label for="penerbit" class="form-label">Penerbit</label>
-                <input type="text" class="form-control" id="penerbit" required value="<?= $b['penerbit']; ?>">
+                <input name="penerbit" id="penerbit" type="text" class="form-control validate" required value="<?= $b['penerbit']; ?>">
             </div>
             <div class="mb-3">
                 <label for="harga" class="form-label">Harga</label>
-                <input type="text" class="form-control" id="harga" required value="<?= $b['harga']; ?>">
+                <input name="harga" id="harga" type="text" class="form-control validate" required value="<?= $b['harga']; ?>">
             </div>
             <div class="mb-3">
                 <label for="halaman" class="form-label">Halaman</label>
-                <input type="text" class="form-control" id="halaman" required value="<?= $b['halaman']; ?>">
+                <input name="halaman" id="halaman" type="text" class="form-control validate" required value="<?= $b['halaman']; ?>">
             </div>
             <div class="mb-3">
                 <label for="genre" class="form-label">Genre</label>
-                <input type="text" class="form-control" id="genre" required value="<?= $b['genre']; ?>">
+                <input name="genre" id="genre" type="text" class="form-control validate" required value="<?= $b['genre']; ?>">
             </div>
             <div class="mb-3">
                 <label for="bahasa" class="form-label">Bahasa</label>
-                <input type="text" class="form-control" id="bahasa" required value="<?= $b['bahasa']; ?>">
+                <input name="bahasa" id="bahasa" type="text" class="form-control validate" required value="<?= $b['bahasa']; ?>">
             </div>
             <div class="mb-3">
                 <label for="cover" class="form-label">Cover</label>
@@ -71,7 +71,7 @@ if (isset($_POST['ubah'])) {
                     <input name="cover" id="cover" type="file" required value="<?= $b['cover']; ?>">
                 </div>
             </div>
-            <button type="submit" name="tambah" class="btn btn-primary">Selesai</button>
+            <button type="submit" name="ubah" class="btn btn-primary">Selesai</button>
             <button type="submit" class="btn btn-danger">
                 <a href="index.php" class="text-decoration-none text-light">Kembali</a>
             </button>
