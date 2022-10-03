@@ -28,20 +28,8 @@ if (isset($_POST['ubah'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Form Update Data Universitas</title>
-    <style>
-        .tombol {
-            margin: 40px auto;
-        }
-
-        form {
-            margin: 30px auto;
-        }
-
-        h3 {
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Toko Buku Cerdas</title>
 </head>
 
 <body>

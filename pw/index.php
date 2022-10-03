@@ -12,37 +12,8 @@ $buku = query("SELECT * FROM buku");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Toko Buku Cerdas</title>
-    <style>
-        img {
-            width: 100px;
-        }
-
-        table {
-            margin-bottom: 60px;
-        }
-
-        h2 {
-            margin: 30px auto;
-        }
-
-        td {
-            padding: 4px 6px;
-        }
-
-        a {
-            margin-bottom: 15px;
-        }
-
-        .add {
-            float: right;
-            margin: 15px auto;
-        }
-
-        .clear {
-            clear: both;
-        }
-    </style>
 </head>
 
 <body>
