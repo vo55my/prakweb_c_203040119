@@ -11,7 +11,11 @@ class App
     $url = $this->parseURL();
 
     // Controller
-    if (file_exists('../app/controllers' . $url[0] . '.php')) {
+    if ($url == null) {
+      $url = [$this->controller];
+    }
+
+    if (file_exists('../app/controllers/' . $url[0] . '.php')) {
       $this->controller = $url[0];
       unset($url[0]);
     }
@@ -42,6 +46,9 @@ class App
       $url = rtrim($_GET['url'], '/');
       $url = filter_var($url, FILTER_SANITIZE_URL);
       $url = explode('/', $url);
+      return $url;
+    } else {
+      $url = [$this->controller];
       return $url;
     }
   }
